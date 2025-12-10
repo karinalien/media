@@ -1,0 +1,62 @@
+﻿{% extends "base.html" %}
+
+{% block title %}Портфолио - Дизайн-студия{% endblock %}
+
+{% block content %}
+<section class="container">
+    <div class="text-center mb-4">
+        <h1>Наши работы</h1>
+        <p>Примеры успешных проектов, которые мы создали для наших клиентов</p>
+    </div>
+    
+    <div class="portfolio-grid">
+        <div class="portfolio-item">
+            <img src="{{ url_for('static', filename='img/portfolio1.jpg') }}" alt="Denum">
+            <div class="portfolio-content">
+                <h3>Denum: Создание финтех бренда</h3>
+                <p>Разработка фирменного стиля и логотипа для финансовой компании</p>
+            </div>
+        </div>
+        
+        <div class="portfolio-item">
+            <img src="{{ url_for('static', filename='img/portfolio2.jpg') }}" alt="Wellement">
+            <div class="portfolio-content">
+                <h3>Wellement: Комплекс стратегических работ</h3>
+                <p>Фирменный стиль для бренда кормов для животных</p>
+            </div>
+        </div>
+        
+        <div class="portfolio-item">
+            <img src="{{ url_for('static', filename='img/portfolio3.jpg') }}" alt="Cute cat">
+            <div class="portfolio-content">
+                <h3>Cute cat: Разработка мерча</h3>
+                <p>Мерч для молочного бренда Милград</p>
+            </div>
+        </div>
+        
+        <div class="portfolio-item">
+            <img src="{{ url_for('static', filename='img/portfolio4.jpg') }}" alt="Kept">
+            <div class="portfolio-content">
+                <h3>Kept: Локализация KPMG</h3>
+                <p>Адаптация международного бренда для российского рынка</p>
+            </div>
+        </div>
+        
+        <div class="portfolio-item">
+            <img src="{{ url_for('static', filename='img/portfolio5.jpg') }}" alt="Neela Springs">
+            <div class="portfolio-content">
+                <h3>Neela Springs: Локализация Eden Springs</h3>
+                <p>Локализация бренда воды для российского рынка</p>
+            </div>
+        </div>
+        
+        <div class="portfolio-item">
+            <img src="{{ url_for('static', filename='img/portfolio6.jpg') }}" alt="Cute cat 2">
+            <div class="portfolio-content">
+                <h3>Cute cat: Разработка мерча</h3>
+                <p>Дополнительная линейка мерча для молочного бренда</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
